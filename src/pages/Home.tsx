@@ -44,7 +44,6 @@ export default function Home() {
           width: 100vw;
           height: 100vh;
           overflow: hidden;
-          /* Removed fallback background color */
         }
 
         /* Radial blur overlay */
@@ -145,12 +144,12 @@ export default function Home() {
             border-bottom: 0.8vh solid #BDB0D9;
           }
 
-          /* Horizontal divider bar */
+          /* Horizontal divider bar - FIXED HEIGHT */
           .mobile-divider-bar {
             width: 70vw;
-            height: 1vh;
+            height: 6px;
             background-color: #F2F2F0;
-            border-radius: 0.2vh;
+            border-radius: 3px;
             margin: 2vh 0;
           }
 
@@ -211,7 +210,7 @@ export default function Home() {
 
           .mobile-footer-text {
             font-family: 'IBM Plex Sans', sans-serif;
-            font-size: 3vw;
+            font-size: clamp(14px, 3.5vw, 18px);
             font-weight: 400;
             color: #0C0C0C;
             line-height: 1.5;
@@ -223,13 +222,11 @@ export default function Home() {
         /* Tablet/Desktop: 769px and above */
         @media (min-width: 769px) {
           
-          /* ADDED THIS BLOCK TO HIDE MOBILE ELEMENTS ON DESKTOP */
           .mobile-header,
           .mobile-simulation,
           .mobile-footer {
             display: none;
           }
-          /* END OF ADDED BLOCK */
 
           .red {
             background: #0C0C0C;
@@ -445,7 +442,7 @@ export default function Home() {
 
           .bottom-left-text {
             font-family: 'IBM Plex Sans', sans-serif;
-            font-size: clamp(0.8rem, 0.8vw + 0.5rem, 1rem);
+            font-size: clamp(14px, 1.1vw + 4px, 18px);
             font-weight: 400;
             color: #0C0C0C;
             line-height: 1.5;
@@ -473,18 +470,16 @@ export default function Home() {
       `}</style>
 
       {/* --- DESKTOP-ONLY ELEMENTS --- */}
-      {/* These are hidden by the (max-width: 768px) media query */}
       <div className="box red"></div>
       <div className="box blue"></div>
       <div className="box yellow"></div>
 
-      {/* White bar between blue and yellow */}
       <div className="divider-bar"></div>
 
       {/* Bottom-left paragraph with gradient */}
       <div className="bottom-left-gradient">
         <div className="bottom-left-text">
-          We are a private research firm analyzing the frontier between mathematical theory and financial systems. Our work explores systemic patterns within data, forming insight and structure from disorder.
+          White Oak Analysis operates at the intersection of mathematical theory and financial systems. Our work explores automated, statistical strategies that capture market inefficiencies. Driven by ethical effort, we focus on rigorous risk control to decouple consistent performance from broader market noise.
         </div>
       </div>
 
@@ -535,7 +530,6 @@ export default function Home() {
       </div>
 
       {/* --- MOBILE-ONLY ELEMENTS --- */}
-      {/* These are hidden by the (min-width: 769px) media query */}
       <div className="mobile-header">
         <a href="/" style={{ textDecoration: "none" }}>
           <div className="mobile-logo-section">
@@ -549,7 +543,6 @@ export default function Home() {
           </div>
         </a>
 
-        {/* Horizontal divider bar */}
         <div className="mobile-divider-bar"></div>
 
         <nav className="mobile-nav">
@@ -565,10 +558,9 @@ export default function Home() {
 
       <div className="mobile-footer">
         <p className="mobile-footer-text">
-          We are a private research firm analyzing the frontier between mathematical theory and financial systems. Our work explores systemic patterns within data, forming insight and structure from disorder.
+          White Oak Analysis operates at the intersection of mathematical theory and financial systems. Our work explores automated, statistical strategies that capture market inefficiencies. Driven by ethical effort, we focus on rigorous risk control to decouple consistent performance from broader market noise.
         </p>
       </div>
     </div>
   );
 }
-
