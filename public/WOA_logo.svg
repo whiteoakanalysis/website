@@ -11,7 +11,7 @@
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
-   sodipodi:docname="WOA_logo.svg"
+   sodipodi:docname="WOA_logo_black.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -28,13 +28,13 @@
      inkscape:document-units="px"
      inkscape:lockguides="false"
      showguides="true"
-     inkscape:zoom="1.4849242"
-     inkscape:cx="211.12188"
-     inkscape:cy="244.1202"
-     inkscape:window-width="2880"
-     inkscape:window-height="1514"
+     inkscape:zoom="1.05"
+     inkscape:cx="246.19048"
+     inkscape:cy="207.14286"
+     inkscape:window-width="1920"
+     inkscape:window-height="1094"
      inkscape:window-x="-11"
-     inkscape:window-y="66"
+     inkscape:window-y="-11"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1">
     <sodipodi:guide
@@ -161,5 +161,9 @@
        style="opacity:1;fill:#1a1a1a"
        d="m 277.42578,231 h 49.88288 l 15.29554,55.90879 -47.23662,10.17844 z"
        id="path105" />
+    <path
+       d="M 256,51 A 205,205 0 0 0 51,256 205,205 0 0 0 124.63867,413.38086 l 14.98438,-55.00195 A 155,155 0 0 1 101,256 155,155 0 0 1 256,101 155,155 0 0 1 411,256 155,155 0 0 1 372.37695,358.37891 l 14.98438,55.00195 A 205,205 0 0 0 461,256 205,205 0 0 0 256,51 Z"
+       style="display:inline;opacity:1;stroke-width:1.51167;fill:#1a1a1a;fill-opacity:1"
+       id="path4" />
   </g>
 </svg>
