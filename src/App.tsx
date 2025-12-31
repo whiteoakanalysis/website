@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Research from "./pages/Research";
 import Contact from "./pages/Contact";
+import Contact_Success from "./pages/Contact_Success";
 
 function TitleUpdater() {
   const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
         <Link to="/about" className="text-gray-700 hover:text-black font-medium">About</Link>
         <Link to="/research" className="text-gray-700 hover:text-black font-medium">Research</Link>
         <Link to="/contact" className="text-gray-700 hover:text-black font-medium">Contact</Link>
+        <Link to="/contact_success" className="text-gray-700 hover:text-black font-medium">Contact Success</Link>
       </nav>
 
       <Routes>
@@ -46,6 +48,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/research" element={<Research />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/contact_success" element={<Contact_Success />} />
         <Route path="*" element={<h1 className="text-center text-4xl mt-20">404 Not Found</h1>} />
       </Routes>
     </Router>
